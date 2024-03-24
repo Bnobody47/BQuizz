@@ -1,15 +1,6 @@
-{% extends "base.html" %}
-
-{% block content %}
 <h2>Quiz Results</h2>
-{% if quiz_results %}
     <p>Your quiz results:</p>
     <ul>
-        {% for result in quiz_results %}
             <li>Score: {{ result.score }}</li>
-        {% endfor %}
     </ul>
-{% else %}
     <p>No quiz results available.</p>
-{% endif %}
-{% endblock %}

@@ -9,15 +9,10 @@
 <body>
     <header>
         <!-- Your header content here -->
-        {% if current_user.is_authenticated %}
             <a href="{{ url_for('logout') }}">Logout</a>
-        {% else %}
             <a href="{{ url_for('login') }}">Login</a>
-        {% endif %}
     </header>
     <main>
-        {% block content %}
-        {% endblock %}
     </main>
     <footer>
         <p>&copy; 2024 Interactive Quiz. All rights reserved.</p>
