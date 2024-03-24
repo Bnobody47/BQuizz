@@ -1,2 +1,53 @@
-<h1>Welcome to the Interactive Quiz Application!</h1>
-<!-- Additional content for the home page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="header">Interactive Quiz Application</h1>
+    
+    <div class="quiz-info">
+        <p>Welcome to the Interactive Quiz Application!</p>
+        <p>Test your knowledge in Python, HTML, and CSS with our quizzes.</p>
+    </div>
+    
+    <div class="quiz-grid">
+        <!-- Login Modal Trigger Button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
+
+        <!-- Registration Modal Trigger Button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal">Register</button>
+
+        <!-- Quiz Modal Trigger Button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quizModal">Start Python Quiz</button>
+
+        <!-- Result Modal Trigger Button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resultModal">View Python Quiz Result</button>
+
+        <!-- Quiz Modal Trigger Button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quizModal">Start HTML Quiz</button>
+
+        <!-- Result Modal Trigger Button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resultModal">View HTML Quiz Result</button>
+
+        <!-- Quiz Modal Trigger Button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#quizModal">Start CSS Quiz</button>
+
+        <!-- Result Modal Trigger Button -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resultModal">View CSS Quiz Result</button>
+    </div>
+</div>
+
+<!-- Include Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
